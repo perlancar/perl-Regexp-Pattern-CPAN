@@ -6,7 +6,7 @@ package Regexp::Pattern::CPAN;
 our %RE = (
     pause_id => {
         summary => 'PAUSE author ID, or PAUSE ID for short',
-        pat => qr/[a-z][a-z0-9]{1,8}/,
+        pat => qr/[A-Z][A-Z0-9]{1,8}/,
         description => <<'_',
 
 I'm not sure whether PAUSE allows digit for the first letter. For safety I'm
