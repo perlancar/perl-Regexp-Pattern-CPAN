@@ -13,6 +13,12 @@ I'm not sure whether PAUSE allows digit for the first letter. For safety I'm
 assuming no.
 
 _
+        examples => [
+            {str=>'PERLANCAR', matches=>1},
+            {str=>'A', summary=>'too short', matches=>0},
+            {str=>'PERL ANCAR', summary=>'contains whitespace', matches=>0},
+            {str=>'RANDALSCHWARTZ', summary=>'too long', matches=>0},
+        ],
     },
 );
 
