@@ -15,9 +15,10 @@ assuming no.
 _
         examples => [
             {str=>'PERLANCAR', matches=>1},
+            {str=>'perlancar', summary=>'Only allows uppercase', matches=>0},
             {str=>'A', summary=>'too short', matches=>0},
-            {str=>'PERL ANCAR', summary=>'contains whitespace', matches=>0},
-            {str=>'RANDALSCHWARTZ', summary=>'too long', matches=>0},
+            {str=>'PERL ANCAR', gen_args=>{-anchor=>1}, summary=>'contains whitespace', matches=>0},
+            {str=>'RANDALSCHWARTZ', gen_args=>{-anchor=>1}, summary=>'too long', matches=>0},
         ],
     },
 );
