@@ -1,3 +1,9 @@
+0.006   2021-07-27  Released-By: PERLANCAR; Urgency: medium
+
+	- [refactor] Move release_tarball_filename pattern to
+	  Regexp-Pattern-Perl dist under Regexp::Pattern::Perl::Release.
+
+
 0.005   2021-07-27  Released-By: PERLANCAR; Urgency: medium
 
 	- Add pattern: release_tarball_filename.
