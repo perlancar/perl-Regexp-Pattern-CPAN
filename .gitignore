@@ -2,3 +2,4 @@ Regexp-Pattern-CPAN-*
 .build
 *~
 nytprof*
+.DS_Store
